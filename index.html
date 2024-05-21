@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document veggiecraft dashboard </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!----tailwind cdn-->
+    <script src="https://kit.fontawesome.com/0ecbe17838.js"crossorigin="anonymous"></script>
+    <!--font awesome link-->
+</head>
+<body>
+    <div class="flex w-screen h-screen font-sans">
+        <div class="left">
+            <div class="side-bar">
+                <div class="flex flex-col w-24 overflow-auto bg-slate-50 items-center h-screen m-2 rounded-md"> 
+                    <div class="logo-box m-8">
+                        <div class="logo text-4xl text-red-600 text-center"><i class="fa-solid fa-spa"></i></div>
+                        <div class="logo-title text-sm font-medium text-slate-950 text-center">VegCraft</div>
+                    </div> 
+                    <!---end of logo--> 
+                    <div class="veggie-icons m-4 text-center bg-gray-100 p-4 rounded-t-full rounded-b-full">
+                        <div class="veggie-icon text-xl my-4"><i class="fa-solid fa-carrot"></i></div>
+                        <div class="veggie-icon text-xl my-4 p-2 rounded-full bg-red-600 text-slate-200 text-center"><i class="fa-solid fa-lemon"></i></i></div>
+                        <div class="veggie-icon text-xl my-4"><i class="fa-solid fa-apple-whole"></i></div>
+                    </div>
+                    <!---end of veggie-icon-->
+                    <div class="tool-box mt-12 text-center"> 
+                        <div class="tool-icons  my-8 text-xl"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="tool-icons my-8 text-xl text-gray-300"><i class="fa-solid fa-cube"></i></div>
+                        <div class="tool-icons my-8 text-xl text-gray-300"><i class="fa-solid fa-tag"></i></div>
+                        <div class="tool-icons my-8 text-xl text-gray-300"><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                    <!---end of tool-box-->
+                    <div class="girl-image text-center items-center mt-12 mb-8 flex">
+                        <img class="image h-12 w-12 rounded-full object-cover" src="girl-image.jpg">
+                        <div class="dot relative bottom-4 right-3 text-lime-500 text-sm ">●</div>
+                    </div>
+                    <!---end of girl-iamge-->
+                </div>
+            </div>
+            <!---end of side-bar-->
+        </div>
+        <!---end of left-->
+
+        <div class="center w-4/6 flex flex-col h-screen overflow-auto">
+            <div class="header flex justify-between mt-12 mx-8 pb-8 border-b-2 border-gray-100 border-solid items-center">
+                <div class="title flex">
+                    <div class="text-icon mr-2 text-base text-gray-900"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="title-text text-gray-500 text-base">To catalog</div>
+                </div>
+                <div class="title-text text-gray-900 text-2xl font-medium font-sans">Set your basket</div>
+                <div class="title flex">
+                    <div class="text-icon mr-2 text-gray-900"><i class="fa-solid fa-heart"></i></div>
+                    <div class="title-text text-base text-gray-900 font-medium">Save to list</div>
+                </div>
+            </div>
+            <!---end of header-->
+            <div class="main-content m-8">
+                <div class="flex ">
+                    <div class="image bg-slate-50 rounded-3xl relative">
+                        <img class="mix-blend-multiply p-8" src="vegetable-basket.jpeg">
+                        <div class="icon top-4 text-base right-8 absolute bg-gray-100 text-gray-900 text-center p-4  rounded-full"><i class="fa-solid fa-video"></i></div>
+                    </div>
+                    <!---end of image--->
+                    <div class="veggie-basket mx-8 flex-1">
+                        <div class="veggie-titile-box flex justify-between mb-12">
+                            <div class="veggie-basket-title text-7xl text-bold text-slate-900 text-center">Veggy <br> Basket</div>
+                            <div class="rating flex pt-4"> 
+                                <div class="rating-number mr-4 text-2xl text-slate-900 text-center text-bold"> 4.7</div>  
+                                <div class="rating-icon text-2xl text-yellow-400"><i class="fa-solid fa-star"></i></div> 
+                            </div>
+                        </div>
+                        <!---end of veggie basket-title-->
+                        <div class="basket font-semibold text-base">In your basket</div>
+                        <div class="cart-items flex justify-between items-center mt-4">
+                            <div class="items">
+                                <div class="veggie-images bg-lime-100 p-4 rounded-full flex items-center justify-center">
+                                    <img class="capcisum-img h-8 w-8 mix-blend-multiply rounded-full" src="capcisum.jpeg">
+                                </div>
+                                <div class="adding-cart flex text-sm mt-2">
+                                    <div class="add px-2 text-center text-gray-500 pt-2">+</div>
+                                    <div class="number px-2 bg-slate-50 p-2 rounded-full">3</div>
+                                    <div class="remove px-2 pt-2">-</div>
+                                </div>
+                            </div>
+
+                            <div class="items">
+                                <div class="veggie-images bg-rose-50 p-4 rounded-full flex items-center justify-center">
+                                    <img class="carrot-img h-8 w-8 mix-blend-multiply rounded-full" src="carrot.jpeg">
+                                </div>
+                                <div class="adding-cart flex text-sm mt-2">
+                                    <div class="add px-2 text-center text-gray-500 pt-2">+</div>
+                                    <div class="number px-2 bg-slate-50 p-2 rounded-full">8</div>
+                                    <div class="remove px-2 pt-2">-</div>
+                                </div>
+                            </div>
+                            
+                            <div class="items">
+                                <div class="veggie-images bg-fuchsia-100 p-4 rounded-full flex items-center justify-center">
+                                    <img class="onion-img h-8 w-8 mix-blend-multiply rounded-full" src="onion.jpeg">
+                                </div>
+                                <div class="adding-cart flex text-sm mt-2">
+                                    <div class="add px-2 text-center text-gray-500 pt-2">+</div>
+                                    <div class="number px-2 bg-slate-50 p-2 rounded-full">2</div>
+                                    <div class="remove px-2 pt-2">-</div>
+                                </div>
+                            </div>
+                            
+                            <div class="items">
+                                <div class="veggie-images bg-lime-100 p-4 rounded-full flex items-center justify-center">
+                                    <img class="cucumber-img h-8 w-8 mix-blend-multiply rounded-full" src="cucumber.jpeg">
+                                </div>
+                                <div class="adding-cart flex text-sm mt-2">
+                                    <div class="add px-2 text-center text-gray-500 pt-2">+</div>
+                                    <div class="number px-2 bg-slate-50 p-2 rounded-full">1</div>
+                                    <div class="remove px-2 pt-2">-</div>
+                                </div>
+                            </div>
+
+                            <div class="items">
+                                <div class="veggie-images bg-rose-100 p-4 rounded-full flex items-center justify-center">
+                                    <img class="cucumber-img h-8 w-8 mix-blend-multiply rounded-full" src="tomato.jpeg">
+                                </div>
+                                <div class="adding-cart flex text-sm mt-2">
+                                    <div class="add px-2 text-center text-gray-500 pt-2">+</div>
+                                    <div class="number px-2 bg-slate-50 p-2 rounded-full">1</div>
+                                    <div class="remove px-2 pt-2">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----end of cart-items-->
+                        <div class="additional-info mt-8">
+                            <div class="info-title font-semibold text-base">Additional Info</div>
+                            <div class="flex mt-4">
+                                <div class="storage-container flex ml-4 bg-gray-100 px-4 py-2 rounded-2xl text-center">
+                                    <div class="icon text-slate-600 text-sm pr-2 text-center font-bold"><i class="fa-solid fa-calendar-days"></i></div>
+                                    <div class="storage text-sm text-slate-500 pr-2 text-center">Storage:</div>
+                                    <div class="storage-time text-slate-600 text-sm pr-2 text-center font-bold">10-12 days</div>
+                                </div>
+                                <div class="type-container flex ml-4 bg-gray-100 px-4 py-2 rounded-2xl text-center">
+                                    <div class="icon text-slate-600 text-sm pr-2 text-center font-bold"><i class="fa-solid fa-tree"></i></div>
+                                    <div class="storage text-sm text-slate-500 pr-2 text-center">Type:</div>
+                                    <div class="storage-time text-slate-600 text-sm pr-2 text-center font-bold">Mix of vegetables</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of additional info--->
+                    </div>
+                </div>
+                <!---end of veggie-basket-->
+                <div class="add-more mt-16 mb-8 font-medium text-2xl text-slate-900">You can also add</div>
+                <div class="add-veggie flex justify-between">
+                    <div class="cart">
+                        <div class="add-to-cart flex items-center">
+                            <div class="veggie-images bg-slate-50 p-4 rounded-xl flex items-center justify-center relative">
+                                <img class="cucumber-img h-32 w-32 mix-blend-multiply" src="cucumber.jpeg">
+                                <div class="icon bg-yellow-400 text-slate-700 absolute bottom-0 right-0  h-8 w-8 text-base pl-1.5 w-8 rounded-1xl border-solid border-slate-50 border-4"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                        <div class="info-box text-center my-4">
+                            <div class="item-name text-base text-gray-600ext-center font-bold">cucumber</div>
+                            <div class="price text-sm text-gray-400">$2.00</div>
+                        </div>
+                    </div>
+                    <!----end of cart-->
+                    <div class="cart">
+                        <div class="add-to-cart flex items-center">
+                            <div class="veggie-images bg-slate-50 p-4 rounded-xl flex items-center justify-center relative">
+                                <img class="brinjal-img h-32 w-32 mix-blend-multiply" src="brinjal.jpeg">
+                                <div class="icon bg-yellow-400 text-slate-700 absolute bottom-0 right-0  h-8 w-8 text-base pl-1.5  rounded-1xl border-solid border-slate-50 border-4"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                        <div class="info-box text-center my-4">
+                            <div class="item-name text-base text-gray-600 text-center font-bold">Brinjal</div>
+                            <div class="price text-sm text-gray-400 ">$0.80</div>
+                        </div>
+                    </div>
+                    <!---end of cart-->
+                    <div class="cart">
+                        <div class="add-to-cart flex items-center">
+                            <div class="veggie-images bg-slate-50 p-4 rounded-xl flex items-center justify-center relative">
+                                <img class="cabbage-img h-32 w-32 mix-blend-multiply" src="cabbage.jpeg">
+                                <div class="icon bg-yellow-400 text-slate-700 absolute bottom-0 right-0  h-8  w-8 text-base pl-1.5 rounded-1xl border-solid border-slate-50 border-4"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                        <div class="info-box text-center my-4">
+                            <div class="item-name text-base text-gray-600 text-center font-bold">Cabbage</div>
+                            <div class="price text-sm text-gray-400 ">$1.40</div>
+                        </div>
+                    </div>
+                    <!---end of cart-->
+                    <div class="cart">
+                        <div class="add-to-cart flex items-center">
+                            <div class="veggie-images bg-slate-50 p-4 rounded-xl flex items-center justify-center relative">
+                                <img class="radish-img h-32 w-32 mix-blend-multiply" src="raddish.jpeg">
+                                <div class="icon bg-yellow-400 text-slate-700 absolute bottom-0 right-0  h-8  w-8 text-base pl-1.5 rounded-1xl border-solid border-slate-50 border-4"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                        <div class="info-box text-center my-4">
+                            <div class="item-name  text-gray-600 text-base text-center font-bold ">Radish</div>
+                            <div class="price text-sm text-gray-400">$2.20</div>
+                        </div>
+                    </div>
+                   <!---end of cart-->
+                </div>
+               <!---end of add-veggie-->
+            </div>
+        </div>
+        <!----end of center-->
+
+        <div class="right w-2/6 bg-neutral-900 m-2 flex flex-col overflow-auto h-screen rounded-md">
+            <div class="mt-10 pb-8 mx-8  border-b-2 border-neutral-700 border-solid items-center text-neutral-50 font-sans text-2xl text-center">Complete your order</div>
+            <!--end of complete your order-->
+            <div class="product-size mx-8 mt-12 mb-8">
+                <div class="heading text-base text-neutral-400 pb-4">Product size</div>
+                <!--end of product size heading-->
+                <div class="flex justify-between">
+                    <div class="size-per-kg bg-neutral-800 px-6 pt-4 pb-4  text-center content-center rounded-2xl">
+                        <div class="per-kg text-neutral-50 text-sm pb-2">S</div>
+                        <div class="size text-neutral-400 text-sm">2 kg</div>
+                    </div>
+                    <div class="size-per-kg bg-neutral-800 px-6 pt-4 pb-4  text-center content-center rounded-2xl">
+                        <div class="per-kg text-neutral-50 text-sm pb-2">M</div>
+                        <div class="size text-neutral-400 text-sm">4 kg</div>
+                    </div>
+                    <div class="size-per-kg bg-amber-400 px-6 pt-4 pb-4 text-center content-center rounded-2xl">
+                        <div class="per-kg text-neutral-900 text-sm pb-2">L</div>
+                        <div class="size text-neutral-600 text-sm">6 kg</div>
+                    </div>
+                    <div class="size-per-kg bg-neutral-800 px-6 pt-4  pb-4 text-center content-center rounded-2xl">
+                        <div class="per-kg text-neutral-50 text-sm pb-2">Xl</div>
+                        <div class="size text-neutral-400 text-sm">8 kg</div>
+                    </div>
+                </div>
+            </div>
+            <!---end of product-size-->
+
+            <div class="package mx-8 border-b-2 border-neutral-700 border-solid pb-8">
+                <div class="heading text-base text-neutral-400 pb-4">Package</div>
+                <!--end of product size heading-->
+                <div class="flex justify-between">
+                    <div class="package">
+                        <div class="size-per-kg bg-neutral-800 px-6 pt-4 pb-4  text-center content-center rounded-2xl">
+                            <div class="pt-2 h-16 w-16 text-amber-400 text-5xl text-center"><i class="fa-solid fa-bag-shopping"></i></div>
+                        </div>
+                        <div class="item-name pt-2 text-neutral-400 text-sm text-center">Bag</div>
+                    </div>
+                    <div class="package">
+                        <div class="size-per-kg bg-amber-400 px-6 pt-4 pb-4  text-center content-center rounded-2xl">
+                            <div class="pt-2 h-16 w-16 text-yellow-600 text-5xl text-center"><i class="fa-solid fa-basket-shopping"></i></div>
+                        </div>
+                        <div class="item-name pt-2 text-neutral-50 text-sm text-center">Basket</div>
+                    </div>
+                    <div class="package">
+                        <div class="size-per-kg bg-neutral-800 px-6 pt-4 pb-4  text-center content-center rounded-2xl">
+                            <div class="pt-2 h-16 w-16 text-amber-400 text-5xl text-center"><i class="fa-solid fa-box-open"></i></div>
+                        </div>
+                        <div class="item-name pt-2 text-neutral-400 text-sm text-center">Box</div>
+                    </div>
+                </div>
+            </div>
+            <!--end of package-->
+            <div class="delivery m-8">
+                <div class="delivery-address flex justify-between text-zinc-300">
+                    <div class="delivery-title text-neutral-400 text-base text-center">Delivery city:</div>
+                    <div class="delivery-place flex">
+                        <div class="city-name text-base text-center text-lime-500">Dallas</div>
+                        <div class="icon text-base text-center ml-4 text-lime-500 "><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                </div>
+                <div class="delivery-address flex justify-between text-zinc-300 mt-6">
+                    <div class="delivery-title text-neutral-400 text-base text-center">Delivery to the door</div>
+                    <div class="check text-base text-gray-900 text-center bg-lime-500 p-1 w-8 h-8 rounded-md"><i class="fa-solid fa-check"></i></div>
+                </div>
+                <div class="delivery-address flex justify-between text-zinc-300 mt-6">
+                    <div class="delivery-title text-neutral-400 text-base text-center">Total price</div>
+                    <div class="delivery-place text-neutral-50 text-3xl">$ 32.45</div>
+                </div>
+            </div>
+            <!--end of delivery-->
+            <div class="add-to-cart mt-40 mb-8 text-neutral-50 text-center text-base border-4 border-solid border-neutral-50 bg-lime-500 mx-8 rounded-3xl p-2">Add to cart</div>
+            <!--end of cart-->
+        </div>
+        <!---end of right--->
+    </div>
+</body>
+</html>
